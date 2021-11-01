@@ -1,3 +1,3 @@
-export const hello = () => {
-  console.log("hello from esm");
+export const hello = async () => {
+  throw new Error("うわー");
 };

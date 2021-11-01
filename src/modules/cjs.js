@@ -1,3 +1,1 @@
-const hello = () => {
-  console.log("hello from esm");
-};
+Promise.reject(new Error("うわー"));

@@ -7,5 +7,17 @@ export default () => {
     });
   }, []);
 
+  useEffect(() => {
+    try {
+      import("../modules/cjs")
+        .then((mod) => {
+          console.log(mod);
+        })
+        .catch((e) => console.error("eeeee", e));
+    } catch (e) {
+      console.error("outer", e);
+    }
+  }, []);
+
   return <div>hello</div>;
 };
